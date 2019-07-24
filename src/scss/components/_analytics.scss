@@ -1,0 +1,52 @@
+.focus-time-group {
+  display: flex;
+}
+
+.focus-time-item {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.focus-time-item-title {
+  font-size: 16px;
+  color: white;
+  line-height: 26px;
+}
+
+.focus-time-item-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.focus-time-item-amount {
+  font-size: 64px;
+  color: #ff4384;
+  line-height: 64px;
+}
+
+.focus-time-item-unit {
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.2;
+  margin-left: 8px;
+}
+
+.chart-date-picker {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.chart-date-picker-prev-week {
+  margin-right: 8px;
+}
+
+.chart-date-picker-next-week {
+  margin-left: 8px;
+}
+
+.chart-date-picker-hyphen {
+  margin: 0 8px;
+  font-size: 12px;
+}

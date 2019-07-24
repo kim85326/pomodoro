@@ -1,0 +1,130 @@
+@import "../helpers/variable";
+
+$inner-circle-diameter: 540px;
+$circle-diameter: calc(#{$inner-circle-diameter} + 32px);
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.timer-border,
+.timer-remain-time {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    width: $circle-diameter;
+    height: $circle-diameter;
+    border-radius: 50%;
+}
+
+.timer-border {
+    border: 5px solid $work-color;
+    z-index: 3;
+}
+
+.break-mode .timer-border {
+    border-color: $break-color;
+}
+
+.timer-remain-time {
+    z-index: 2;
+}
+
+.timer-remain-time-left,
+.timer-remain-time-rotate,
+.timer-remain-time-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.timer-remain-time-left {
+    left: 0px;
+    border-radius: $circle-diameter 0 0 $circle-diameter;
+    background: $work-color;
+    z-index: 1;
+}
+
+.break-mode .timer-remain-time-left {
+    background: $break-color;
+}
+
+.timer-remain-time-rotate {
+    right: 0px;
+    border-radius: 0 $circle-diameter $circle-diameter 0;
+    background: $work-color;
+    z-index: 2;
+    transform-origin: left center;
+}
+
+.break-mode .timer-remain-time-rotate {
+    background: $break-color;
+}
+
+.timer-remain-time-right {
+    right: 0px;
+    border-radius: 0 $circle-diameter $circle-diameter 0;
+    background: $primary-color;
+    z-index: 3;
+    opacity: 0;
+}
+
+.timer-inner {
+    position: relative;
+    border-radius: 50%;
+    background-color: $work-color;
+    width: $inner-circle-diameter;
+    height: $inner-circle-diameter;
+    color: white;
+    z-index: 4;
+    border: 5px solid $work-color;
+}
+
+.break-mode .timer-inner {
+    background-color: $break-color;
+    border: 5px solid $break-color;
+}
+
+.timer.is-running .timer-inner {
+    background-color: white;
+    color: $work-color;
+}
+
+.break-mode .timer.is-running .timer-inner {
+    color: $break-color;
+}
+
+.timer-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.timer-button svg {
+    font-size: 112px;
+}
+
+.timer-skip-button {
+    position: absolute;
+    top: 56%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    z-index: 2;
+}
+
+.timer.is-running .timer-skip-button {
+    background-color: $work-color;
+}
+
+.break-mode .timer.is-running .timer-skip-button {
+    background-color: $break-color;
+}

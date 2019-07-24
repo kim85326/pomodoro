@@ -1,0 +1,49 @@
+@import "../helpers/variable";
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-label {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.home .checkbox-label {
+    color: $primary-color;
+}
+
+.checkbox-label-text {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mock-checkbox-input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.home .mock-checkbox-input {
+    border-color: $primary-color;
+}
+
+.mock-checkbox-input svg {
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkbox-input:checked + .checkbox-label .mock-checkbox-input svg {
+    display: block;
+}

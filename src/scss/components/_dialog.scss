@@ -1,0 +1,189 @@
+@import "../helpers/variable";
+
+.dialog {
+    background-color: $primary-color;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1280px;
+    min-height: 800px;
+    display: flex;
+    z-index: 2;
+}
+
+.dialog .sidebar {
+    order: 3;
+    background: none;
+    position: unset;
+    width: 133px;
+}
+
+.hide-dialog-button i {
+    font-size: 48px;
+}
+
+.dialog-nav {
+    padding: 45px 85px;
+}
+
+.dialog-main {
+    flex: 1;
+    padding: 45px 0;
+}
+
+.dialog-main-content {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-nav-item {
+    color: #ffffff;
+    opacity: 0.2;
+    margin-bottom: 42px;
+}
+
+.dialog-nav-link {
+    display: flex;
+}
+
+.dialog-nav-link,
+.dialog-nav-link i {
+    font-size: 36px;
+}
+
+.dialog-nav-link-text {
+    margin-left: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dialog-nav-item.active {
+    color: $work-color;
+    opacity: 1;
+}
+
+.dialog-block {
+    margin-top: 48px;
+}
+
+.dialog-block-content {
+    max-height: 220px;
+    overflow: auto;
+}
+
+.dialog-block-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-dialog-block-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-dialog-block-button svg {
+    font-size: 24px;
+}
+
+/* dialog-timer */
+
+.dialog-timer {
+    position: absolute;
+    left: 85px;
+    bottom: 0;
+}
+
+.dialog-timer-semi-circle {
+    border-radius: 350px 350px 0 0;
+    width: 350px;
+    height: 175px;
+    background-color: $work-background-color;
+}
+
+.break-mode .dialog-timer-semi-circle {
+    background-color: $break-background-color;
+}
+
+.dialog-timer .timer-wrapper {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 117px;
+    transform: translateX(-50%);
+    background-color: $primary-color;
+    border-radius: 50%;
+    width: calc(88px + 28px);
+    height: calc(88px + 28px);
+    min-width: calc(88px + 28px);
+    min-height: calc(88px + 28px);
+}
+
+.dialog-timer .timer {
+    top: 50%;
+    left: 50%;
+}
+
+.dialog-timer .timer-border {
+    top: -8px;
+    left: -8px;
+    width: calc(88px + 16px);
+    height: calc(88px + 16px);
+    min-width: calc(88px + 16px);
+    min-height: calc(88px + 16px);
+    border-width: 2px;
+}
+
+.dialog-timer .timer-inner {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    min-height: 88px;
+}
+
+.dialog-timer .timer-play-button i {
+    font-size: 96px;
+}
+
+.dialog-timer .remain-time {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+}
+
+.dialog-timer-title {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dialog-timer .no-in-progress-todo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: $primary-color;
+}

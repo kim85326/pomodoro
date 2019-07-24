@@ -1,0 +1,45 @@
+@import "../helpers/variable";
+
+.new-todo {
+    display: flex;
+}
+
+.new-todo-button {
+    flex: 0 0 24px;
+}
+
+.new-todo {
+    height: 56px;
+    padding: 16px 18px;
+    background-color: white;
+    color: $work-color;
+}
+
+.break-mode .new-todo {
+    color: $break-color;
+}
+
+.new-todo-input {
+    text-transform: uppercase;
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: $work-color;
+}
+
+.break-mode .new-todo-input {
+    color: $break-color;
+}
+
+.new-todo-input::-webkit-input-placeholder {
+    color: $work-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 19px;
+}
+
+.break-mode .new-todo-input::-webkit-input-placeholder {
+    color: $break-color;
+}

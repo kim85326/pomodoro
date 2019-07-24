@@ -1,0 +1,9 @@
+{
+  "extends": "tslint-config-airbnb",
+  "rules": {
+    "ter-indent": [true, 4],
+    "quotemark": [true, "double"],
+    "variable-name": [true, "allow-pascal-case"],
+    "object-literal-shorthand": [true, "never"]
+  }
+}

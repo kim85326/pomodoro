@@ -1,0 +1,50 @@
+@import "../helpers/variable";
+
+.in-progress-todo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.in-progress-todo .todo-item {
+    width: 100%;
+}
+
+.in-progress-todo .checkbox-label {
+    width: 100%;
+    align-items: stretch;
+    font-size: 24px;
+}
+
+.in-progress-todo .in-progress-todo-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.in-progress-todo .mock-checkbox-input {
+    width: 48px;
+    height: 48px;
+}
+
+.in-progress-todo .mock-checkbox-input svg {
+    font-size: 32px;
+}
+
+.in-progress-todo .checkbox-label-text {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.in-progress-todo .todo-item-tomatoes {
+    justify-content: flex-start;
+    height: 12px;
+}
+
+.no-in-progress-todo {
+    font-size: 24px;
+    font-weight: bold;
+}

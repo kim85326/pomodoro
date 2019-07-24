@@ -1,0 +1,44 @@
+@import "../helpers/variable";
+
+.radio-label {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-input {
+    display: none;
+}
+
+.mock-radio-input {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.radio-input:checked + .radio-label .mock-radio-input {
+    border-color: $work-color;
+}
+
+.radio-input:checked + .radio-label .mock-radio-input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: $work-color;
+}

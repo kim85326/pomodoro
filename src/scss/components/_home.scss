@@ -1,0 +1,58 @@
+@import "../helpers/variable";
+
+.home {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1280px;
+    min-height: 800px;
+    z-index: 1;
+    color: $primary-color;
+}
+
+.home-main {
+    padding: 48px 85px;
+    background-color: $work-background-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+}
+
+.break-mode .home-main {
+    background-color: $break-background-color;
+}
+
+.home-main-content {
+    width: 50%;
+    min-width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-main-content-bottom {
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.more,
+.no-more {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.more {
+    color: $work-color;
+}
+
+.break-mode .more {
+    color: $break-color;
+}

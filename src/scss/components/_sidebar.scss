@@ -1,0 +1,34 @@
+@import "../helpers/variable";
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 48px 85px 48px 0;
+    background-color: $primary-color;
+}
+
+.sidebar-nav-item {
+    color: white;
+    margin-bottom: 48px;
+}
+
+.sidebar-nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-nav-link svg {
+    font-size: 36px;
+}
+
+.dialog .sidebar-nav-link svg {
+    font-size: 48px;
+}

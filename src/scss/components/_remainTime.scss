@@ -1,0 +1,12 @@
+@import "../helpers/variable";
+
+.remain-time {
+    color: $work-color;
+    font-weight: bold;
+    font-size: 160px;
+    pointer-events: none;
+}
+
+.break-mode .remain-time {
+    color: $break-color;
+}

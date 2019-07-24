@@ -1,0 +1,56 @@
+@import "../helpers/variable";
+
+.todo-item {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.home .todo-item {
+    color: $primary-color;
+}
+
+.todo-item-title {
+    flex: 1;
+    margin-right: 8px;
+}
+
+.todo-item .checkbox-input:checked + .checkbox-label .checkbox-label-text {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.todo-item-tomatoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.todo-item-tomato {
+    background-color: white;
+    border: white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.todo-item-tomato:last-child {
+    margin-right: 0;
+}
+
+.home .todo-item-tomato {
+    background-color: $primary-color;
+}
+
+.home .todo-item-tomato.todo-item-tomato-running {
+    background-color: inherit;
+    border: 1px solid $work-color;
+}
+
+.todo-item-play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

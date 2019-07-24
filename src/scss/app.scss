@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap");
+@import "./base/reset";
+@import "./helpers/variable";
+@import "./components/radioInput";
+@import "./components/checkboxInput";
+@import "./components/logo";
+@import "./components/sidebar";
+@import "./components/newTodo";
+@import "./components/todoList";
+@import "./components/inProgressTodo";
+@import "./components/timer";
+@import "./components/remainTime";
+@import "./components/home";
+@import "./components/dialog";
+@import "./components/analytics";
+@import "./components/ringtones";
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto, "Roboto", Helvetica, Arial, "微軟正黑體", "PingFang SC",
+        sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:active {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+button {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+button,
+button:focus,
+button:active {
+    outline: none;
+}
+
+input,
+input:focus,
+input:active {
+    outline: none;
+}
+
+textarea,
+textarea:focus,
+textarea:active {
+    outline: none;
+    resize: none;
+}
+
+hr {
+    margin: 8px 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    background-color: white;
+}
+
+.home hr {
+    background-color: $primary-color;
+}
